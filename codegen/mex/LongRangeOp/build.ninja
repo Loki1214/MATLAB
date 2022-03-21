@@ -1,0 +1,52 @@
+# CompilerName=clang
+# Mode=optim
+ninja_required_version = 1.3
+
+# Basic folders
+root = .
+builddir = $root/build/maci64
+matlabdir = /Applications/MATLAB_R2021a.app
+startdir = /Users/Shoki/Documents/MATLAB
+
+# Toolchain information
+cc = /usr/bin/xcrun -sdk macosx10.15 clang
+cxx = /usr/bin/xcrun -sdk macosx10.15 clang++
+linker = /usr/bin/xcrun -sdk macosx10.15 clang
+linkerxx = /usr/bin/xcrun -sdk macosx10.15 clang++
+
+cflags =  -fno-common -arch x86_64 -mmacosx-version-min=10.9 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c99 -I "$root" -I "$startdir" -I "$root/interface" -I "$matlabdir/extern/include" -I "." -DMODEL=LongRangeOp_mex -DMW_NEEDS_VERSION_H -c 
+
+cxxflags =  -fno-common -arch x86_64 -mmacosx-version-min=10.9 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fobjc-arc -std=c++11 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I "$root" -I "$startdir" -I "$root/interface" -I "$matlabdir/extern/include" -I "." -DMODEL=LongRangeOp_mex -DMW_NEEDS_VERSION_H -c 
+
+ldflags =  -Wl,-twolevel_namespace -undefined error -arch x86_64 -mmacosx-version-min=10.9 -Wl,-syslibroot,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -framework Cocoa -bundle  -stdlib=libc++ -L"$matlabdir/bin/maci64" -lmx -lmex -lmat -L"$matlabdir/extern/bin/maci64" -lMatlabDataArray -lMatlabEngine  -Wl,-rpath,@loader_path -o LongRangeOp_mex.mexmaci64 -lemlrt -lcovrt -lut -lmwmathutil 
+
+# Build Rules
+rule cc
+    command = $cc $cflags $in -o $out
+
+rule cxx
+    command = $cxx $cxxflags $in -o $out
+
+rule link
+    command = $linker $in $ldflags
+
+rule linkxx
+    command = $linkerxx $in $ldflags
+
+# Build
+build $builddir/LongRangeOp_data.o : cxx $root/LongRangeOp_data.cpp
+build $builddir/rt_nonfinite.o : cxx $root/rt_nonfinite.cpp
+build $builddir/LongRangeOp_initialize.o : cxx $root/LongRangeOp_initialize.cpp
+build $builddir/LongRangeOp_terminate.o : cxx $root/LongRangeOp_terminate.cpp
+build $builddir/LongRangeOp.o : cxx $root/LongRangeOp.cpp
+build $builddir/mpower.o : cxx $root/mpower.cpp
+build $builddir/eml_int_forloop_overflow_check.o : cxx $root/eml_int_forloop_overflow_check.cpp
+build $builddir/idivide.o : cxx $root/idivide.cpp
+build $builddir/_coder_LongRangeOp_api.o : cxx $root/interface/_coder_LongRangeOp_api.cpp
+build $builddir/_coder_LongRangeOp_mex.o : cxx $root/interface/_coder_LongRangeOp_mex.cpp
+build $builddir/exp.o : cxx $root/exp.cpp
+build $builddir/_coder_LongRangeOp_info.o : cxx $root/interface/_coder_LongRangeOp_info.cpp
+build $builddir/cpp_mexapi_version.o : cxx $matlabdir/extern/version/cpp_mexapi_version.cpp
+
+# Link
+build $root/LongRangeOp_mex.mexmaci64 : linkxx $builddir/LongRangeOp_data.o $builddir/rt_nonfinite.o $builddir/LongRangeOp_initialize.o $builddir/LongRangeOp_terminate.o $builddir/LongRangeOp.o $builddir/mpower.o $builddir/eml_int_forloop_overflow_check.o $builddir/idivide.o $builddir/_coder_LongRangeOp_api.o $builddir/_coder_LongRangeOp_mex.o $builddir/exp.o $builddir/_coder_LongRangeOp_info.o $builddir/cpp_mexapi_version.o 

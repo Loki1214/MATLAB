@@ -1,0 +1,80 @@
+[
+  {
+    "directory": "/Users/Shoki/Documents/MATLAB/codegen/mex/LongRangeOp",
+    "command": "/usr/bin/xcrun -sdk macosx10.15 clang++ -fno-common -arch x86_64 -mmacosx-version-min=10.9 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fobjc-arc -std=c++11 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/Shoki/Documents/MATLAB\" -I \"./interface\" -I \"/Applications/MATLAB_R2021a.app/extern/include\" -I \".\" -DMODEL=LongRangeOp_mex -DMW_NEEDS_VERSION_H -c  LongRangeOp_data.cpp -o build/maci64/LongRangeOp_data.o",
+    "file": "LongRangeOp_data.cpp",
+    "output": "build/maci64/LongRangeOp_data.o"
+  },
+  {
+    "directory": "/Users/Shoki/Documents/MATLAB/codegen/mex/LongRangeOp",
+    "command": "/usr/bin/xcrun -sdk macosx10.15 clang++ -fno-common -arch x86_64 -mmacosx-version-min=10.9 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fobjc-arc -std=c++11 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/Shoki/Documents/MATLAB\" -I \"./interface\" -I \"/Applications/MATLAB_R2021a.app/extern/include\" -I \".\" -DMODEL=LongRangeOp_mex -DMW_NEEDS_VERSION_H -c  rt_nonfinite.cpp -o build/maci64/rt_nonfinite.o",
+    "file": "rt_nonfinite.cpp",
+    "output": "build/maci64/rt_nonfinite.o"
+  },
+  {
+    "directory": "/Users/Shoki/Documents/MATLAB/codegen/mex/LongRangeOp",
+    "command": "/usr/bin/xcrun -sdk macosx10.15 clang++ -fno-common -arch x86_64 -mmacosx-version-min=10.9 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fobjc-arc -std=c++11 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/Shoki/Documents/MATLAB\" -I \"./interface\" -I \"/Applications/MATLAB_R2021a.app/extern/include\" -I \".\" -DMODEL=LongRangeOp_mex -DMW_NEEDS_VERSION_H -c  LongRangeOp_initialize.cpp -o build/maci64/LongRangeOp_initialize.o",
+    "file": "LongRangeOp_initialize.cpp",
+    "output": "build/maci64/LongRangeOp_initialize.o"
+  },
+  {
+    "directory": "/Users/Shoki/Documents/MATLAB/codegen/mex/LongRangeOp",
+    "command": "/usr/bin/xcrun -sdk macosx10.15 clang++ -fno-common -arch x86_64 -mmacosx-version-min=10.9 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fobjc-arc -std=c++11 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/Shoki/Documents/MATLAB\" -I \"./interface\" -I \"/Applications/MATLAB_R2021a.app/extern/include\" -I \".\" -DMODEL=LongRangeOp_mex -DMW_NEEDS_VERSION_H -c  LongRangeOp_terminate.cpp -o build/maci64/LongRangeOp_terminate.o",
+    "file": "LongRangeOp_terminate.cpp",
+    "output": "build/maci64/LongRangeOp_terminate.o"
+  },
+  {
+    "directory": "/Users/Shoki/Documents/MATLAB/codegen/mex/LongRangeOp",
+    "command": "/usr/bin/xcrun -sdk macosx10.15 clang++ -fno-common -arch x86_64 -mmacosx-version-min=10.9 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fobjc-arc -std=c++11 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/Shoki/Documents/MATLAB\" -I \"./interface\" -I \"/Applications/MATLAB_R2021a.app/extern/include\" -I \".\" -DMODEL=LongRangeOp_mex -DMW_NEEDS_VERSION_H -c  LongRangeOp.cpp -o build/maci64/LongRangeOp.o",
+    "file": "LongRangeOp.cpp",
+    "output": "build/maci64/LongRangeOp.o"
+  },
+  {
+    "directory": "/Users/Shoki/Documents/MATLAB/codegen/mex/LongRangeOp",
+    "command": "/usr/bin/xcrun -sdk macosx10.15 clang++ -fno-common -arch x86_64 -mmacosx-version-min=10.9 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fobjc-arc -std=c++11 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/Shoki/Documents/MATLAB\" -I \"./interface\" -I \"/Applications/MATLAB_R2021a.app/extern/include\" -I \".\" -DMODEL=LongRangeOp_mex -DMW_NEEDS_VERSION_H -c  mpower.cpp -o build/maci64/mpower.o",
+    "file": "mpower.cpp",
+    "output": "build/maci64/mpower.o"
+  },
+  {
+    "directory": "/Users/Shoki/Documents/MATLAB/codegen/mex/LongRangeOp",
+    "command": "/usr/bin/xcrun -sdk macosx10.15 clang++ -fno-common -arch x86_64 -mmacosx-version-min=10.9 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fobjc-arc -std=c++11 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/Shoki/Documents/MATLAB\" -I \"./interface\" -I \"/Applications/MATLAB_R2021a.app/extern/include\" -I \".\" -DMODEL=LongRangeOp_mex -DMW_NEEDS_VERSION_H -c  eml_int_forloop_overflow_check.cpp -o build/maci64/eml_int_forloop_overflow_check.o",
+    "file": "eml_int_forloop_overflow_check.cpp",
+    "output": "build/maci64/eml_int_forloop_overflow_check.o"
+  },
+  {
+    "directory": "/Users/Shoki/Documents/MATLAB/codegen/mex/LongRangeOp",
+    "command": "/usr/bin/xcrun -sdk macosx10.15 clang++ -fno-common -arch x86_64 -mmacosx-version-min=10.9 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fobjc-arc -std=c++11 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/Shoki/Documents/MATLAB\" -I \"./interface\" -I \"/Applications/MATLAB_R2021a.app/extern/include\" -I \".\" -DMODEL=LongRangeOp_mex -DMW_NEEDS_VERSION_H -c  idivide.cpp -o build/maci64/idivide.o",
+    "file": "idivide.cpp",
+    "output": "build/maci64/idivide.o"
+  },
+  {
+    "directory": "/Users/Shoki/Documents/MATLAB/codegen/mex/LongRangeOp",
+    "command": "/usr/bin/xcrun -sdk macosx10.15 clang++ -fno-common -arch x86_64 -mmacosx-version-min=10.9 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fobjc-arc -std=c++11 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/Shoki/Documents/MATLAB\" -I \"./interface\" -I \"/Applications/MATLAB_R2021a.app/extern/include\" -I \".\" -DMODEL=LongRangeOp_mex -DMW_NEEDS_VERSION_H -c  interface/_coder_LongRangeOp_api.cpp -o build/maci64/_coder_LongRangeOp_api.o",
+    "file": "interface/_coder_LongRangeOp_api.cpp",
+    "output": "build/maci64/_coder_LongRangeOp_api.o"
+  },
+  {
+    "directory": "/Users/Shoki/Documents/MATLAB/codegen/mex/LongRangeOp",
+    "command": "/usr/bin/xcrun -sdk macosx10.15 clang++ -fno-common -arch x86_64 -mmacosx-version-min=10.9 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fobjc-arc -std=c++11 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/Shoki/Documents/MATLAB\" -I \"./interface\" -I \"/Applications/MATLAB_R2021a.app/extern/include\" -I \".\" -DMODEL=LongRangeOp_mex -DMW_NEEDS_VERSION_H -c  interface/_coder_LongRangeOp_mex.cpp -o build/maci64/_coder_LongRangeOp_mex.o",
+    "file": "interface/_coder_LongRangeOp_mex.cpp",
+    "output": "build/maci64/_coder_LongRangeOp_mex.o"
+  },
+  {
+    "directory": "/Users/Shoki/Documents/MATLAB/codegen/mex/LongRangeOp",
+    "command": "/usr/bin/xcrun -sdk macosx10.15 clang++ -fno-common -arch x86_64 -mmacosx-version-min=10.9 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fobjc-arc -std=c++11 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/Shoki/Documents/MATLAB\" -I \"./interface\" -I \"/Applications/MATLAB_R2021a.app/extern/include\" -I \".\" -DMODEL=LongRangeOp_mex -DMW_NEEDS_VERSION_H -c  exp.cpp -o build/maci64/exp.o",
+    "file": "exp.cpp",
+    "output": "build/maci64/exp.o"
+  },
+  {
+    "directory": "/Users/Shoki/Documents/MATLAB/codegen/mex/LongRangeOp",
+    "command": "/usr/bin/xcrun -sdk macosx10.15 clang++ -fno-common -arch x86_64 -mmacosx-version-min=10.9 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fobjc-arc -std=c++11 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/Shoki/Documents/MATLAB\" -I \"./interface\" -I \"/Applications/MATLAB_R2021a.app/extern/include\" -I \".\" -DMODEL=LongRangeOp_mex -DMW_NEEDS_VERSION_H -c  interface/_coder_LongRangeOp_info.cpp -o build/maci64/_coder_LongRangeOp_info.o",
+    "file": "interface/_coder_LongRangeOp_info.cpp",
+    "output": "build/maci64/_coder_LongRangeOp_info.o"
+  },
+  {
+    "directory": "/Users/Shoki/Documents/MATLAB/codegen/mex/LongRangeOp",
+    "command": "/usr/bin/xcrun -sdk macosx10.15 clang++ -fno-common -arch x86_64 -mmacosx-version-min=10.9 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fobjc-arc -std=c++11 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/Shoki/Documents/MATLAB\" -I \"./interface\" -I \"/Applications/MATLAB_R2021a.app/extern/include\" -I \".\" -DMODEL=LongRangeOp_mex -DMW_NEEDS_VERSION_H -c  /Applications/MATLAB_R2021a.app/extern/version/cpp_mexapi_version.cpp -o build/maci64/cpp_mexapi_version.o",
+    "file": "/Applications/MATLAB_R2021a.app/extern/version/cpp_mexapi_version.cpp",
+    "output": "build/maci64/cpp_mexapi_version.o"
+  }
+]
